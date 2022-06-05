@@ -6,6 +6,8 @@ import Navbar from './components/navbar';
 // import { palette } from '@mui/system';
 import { Box } from '@mui/material';
 import Homepage from './components/homepage';
+import LeftCard from './components/leftcard';
+import RightCard from './components/rightcard';
 
 
 function App() {
@@ -17,6 +19,10 @@ function App() {
     <Box >
       <Navbar />
       <Homepage/>
+      <LeftCard/>
+      <RightCard/>
+      <LeftCard/>
+      <RightCard/>
     </Box>
   );
 }
