@@ -14,12 +14,12 @@ const pages = ['Home', 'About Us', 'What we do', 'Success Stories' , 'Up for Ado
 const Navbar = () => {
   
   return (
-    <AppBar position="static" sx={{bgcolor: 'white'}}>
+    <AppBar position="fixed" sx={{bgcolor: 'white'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
           <Box sx={{ml:4}}>
-              <img src={mainlogo} alt="" height={200}/>
+              <img src={mainlogo} alt="" height={150}/>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             {/* <IconButton

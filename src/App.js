@@ -8,6 +8,7 @@ import { Box } from '@mui/material';
 import Homepage from './components/homepage';
 import LeftCard from './components/leftcard';
 import RightCard from './components/rightcard';
+import Footer from './components/footer';
 
 
 function App() {
@@ -18,11 +19,13 @@ function App() {
     // </div>
     <Box >
       <Navbar />
+      <br /><br /><br /><br /><br /><br /><br />
       <Homepage/>
       <LeftCard/>
       <RightCard/>
       <LeftCard/>
       <RightCard/>
+      <Footer/>
     </Box>
   );
 }
