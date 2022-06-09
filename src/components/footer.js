@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import { Icon } from '@mui/material';
+// import { Icon } from '@mui/material';
 
 // const pages = [
 //   { 
@@ -39,7 +39,7 @@ function Copyright() {
   );
 }
 
-export default function Footer() {
+function Footer() {
   return (
     <Box >
       <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
@@ -79,3 +79,4 @@ export default function Footer() {
     </Box>
   );
 }
+export default Footer;

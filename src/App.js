@@ -9,6 +9,7 @@ import Homepage from './components/homepage';
 import LeftCard from './components/leftcard';
 import RightCard from './components/rightcard';
 import Footer from './components/footer';
+import About from './components/about';
 
 
 function App() {
@@ -18,14 +19,15 @@ function App() {
     //   <Test/>
     // </div>
     <Box >
-      <Navbar />
+      {/* <Navbar />
       <br /><br /><br /><br /><br /><br /><br />
       <Homepage/>
       <LeftCard/>
       <RightCard/>
       <LeftCard/>
       <RightCard/>
-      <Footer/>
+      <Footer/> */}
+      <About/>
     </Box>
   );
 }
