@@ -10,6 +10,8 @@ import LeftCard from './components/leftcard';
 import RightCard from './components/rightcard';
 import Footer from './components/footer';
 import About from './components/about';
+import Whatwedo from './components/whatwedo';
+import Sstory from './components/sstory';
 
 
 function App() {
@@ -19,15 +21,10 @@ function App() {
     //   <Test/>
     // </div>
     <Box >
-      {/* <Navbar />
-      <br /><br /><br /><br /><br /><br /><br />
       <Homepage/>
-      <LeftCard/>
-      <RightCard/>
-      <LeftCard/>
-      <RightCard/>
-      <Footer/> */}
       <About/>
+      <Whatwedo/>
+      <Sstory/>
     </Box>
   );
 }

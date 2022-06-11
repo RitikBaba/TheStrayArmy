@@ -19,7 +19,7 @@ const Navbar = () => {
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
           <Box sx={{ml:4}}>
-              <img src={mainlogo} alt="" height={150}/>
+              <img src={mainlogo} alt="" height={100}/>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             {/* <IconButton

@@ -7,23 +7,19 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import Navbar from './navbar';
+import LeftCard from './leftcard';
+import RightCard from './rightcard';
+import Footer from './footer';
 
 function Homepage() {
   return (
     <>
-        {/* <Box sx={{bgcolor:'#F7C85C', display:'flex' }}>
-            <Box sx={{display:'flex',justifyContent: 'flex-end',mr:35}}>
-                <img src={cover} alt="img not found" height={"450px"} />
-            </Box>
-            <Box sx={{display:'flex',alignItems: 'center' }}>
-                <h1>Hello World</h1>
-            </Box>
-                <Box sx={{display:'flex',alignItems: 'center' }}>
-                <Button variant="contained" color="error" endIcon={<VolunteerActivismTwoToneIcon sx={{ fontSize: 100 }}/>}>
-                  Donate
-                </Button>
-                </Box>
-        </Box> */}
+        <Navbar/>
+        <br />
+        <br />
+        <br />
+        <br />
         <Card sx={{ display: 'flex',bgcolor:'#F7C85C', alignItems: 'center', justifyContent:'space-between',boxShadow: 'none'}}>
         <CardMedia
             component="img"
@@ -47,6 +43,11 @@ function Homepage() {
         </Box>
       </Box>
     </Card>
+    <LeftCard/>
+    <RightCard/>
+    <LeftCard/>
+    <RightCard/>
+    <Footer/>
     </>
   )
 }
