@@ -23,7 +23,7 @@ function LeftCardbtn(props) {
           </Typography>
         </CardContent>
         <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
-            <Button variant="contained" href={props.link} color="error" endIcon={<BorderColorRoundedIcon sx={{ fontSize: 100, alignItems: 'center' }}/>}>
+            <Button variant="contained" target="_blank" href={props.link} color="error" endIcon={<BorderColorRoundedIcon sx={{ fontSize: 100, alignItems: 'center' }}/>}>
                 Click Here
             </Button>
         </Box>
