@@ -8,29 +8,30 @@ import VolunteerActivismTwoToneIcon from '@mui/icons-material/VolunteerActivismT
 import Typography from '@mui/material/Typography';
 import cover from './images/cover.jpg';
 
-function LeftCard() {
+function LeftCard(props) {
 
   return (
     <Card sx={{ display: 'flex', m:4, alignItems: 'center', justifyContent:'space-evenly',boxShadow: 'none'}}>
-      <Box sx={{ display: 'flex', flexDirection: 'column',flex:1, alignItems: 'center' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column',flex:1.2, alignItems: 'center' }}>
         <CardContent >
           <Typography component="div" variant="h3">
-            Live From Space
+            {props.maintext}
           </Typography>
-          <Typography variant="subtitle1" color="text.secondary" component="div">
-            Mac Miller
+          <br />
+          <Typography variant="h6" color="text.secondary" component="div">
+            {props.secondtext}
           </Typography>
         </CardContent>
-        <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
+        {/* <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
             <Button variant="contained" color="error" endIcon={<VolunteerActivismTwoToneIcon sx={{ fontSize: 100, alignItems: 'center' }}/>}>
                 Donate
             </Button>
-        </Box>
+        </Box> */}
       </Box>
       <CardMedia
         component="img"
-        sx={{ width: 700,flex:1  }}
-        image= {cover}
+        sx={{ width: 300,flex:1  }}
+        image= {props.pic}
         alt="Live from space album cover"
       />
     </Card>

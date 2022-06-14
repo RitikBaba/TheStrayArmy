@@ -5,7 +5,8 @@ import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import AdbIcon from '@mui/icons-material/Adb';
-import mainlogo from './mainlogo.png'
+import mainlogo from './logo.png';
+import textpng from './text.png';
 import VolunteerActivismTwoToneIcon from '@mui/icons-material/VolunteerActivismTwoTone';
 
 const pages = ['Home', 'About Us', 'What we do', 'Success Stories' , 'Up for Adoption' ,'Contact Us'];
@@ -20,6 +21,7 @@ const Navbar = () => {
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
           <Box sx={{ml:4}}>
               <img src={mainlogo} alt="" height={100}/>
+              <img src={textpng} alt="" height={85}/>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             {/* <IconButton
