@@ -12,6 +12,7 @@ import Footer from './components/footer';
 import About from './components/about';
 import Whatwedo from './components/whatwedo';
 import Sstory from './components/sstory';
+import Contact_us from './components/contact';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <About/>
       <Whatwedo/>
       <Sstory/>
+      <Contact_us/>
     </Box>
   );
 }
