@@ -8,8 +8,8 @@ import InfoIcon from '@mui/icons-material/Info';
 
 function TitlebarImageList() {
   return (
-    <ImageList sx={{ width:'75%', height: '75%' }}>
-      <ImageListItem key="Subheader" cols={2}>
+    <ImageList sx={{ width:'100%', height: '50%' }}>
+      <ImageListItem key="Subheader" cols={3}>
         <ListSubheader component="div">December</ListSubheader>
       </ImageListItem>
       {itemData.map((item) => (

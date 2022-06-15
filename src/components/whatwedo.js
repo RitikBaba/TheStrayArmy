@@ -45,25 +45,22 @@ function Whatwedo() {
           <Typography component="div" variant="h6" sx={{px:4,color:'red'}}>
             What we do
           </Typography>
-          <Typography color="text.secondary" component="div" variant="h4" sx={{pl:4,py:2}} Wrap>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis at porro velit explicabo ullam aut, corporis 
+          <Typography color="text.secondary" component="h5" variant="h4" sx={{pl:4,py:2}} Wrap>
+          Working now and forever for the well-being of animals including rescue, care, medical treatment, adoption, awareness events and many more...
           </Typography>
         </CardContent>
       </Box>
       <CardContent sx={{ width: 700,flex:1,my:6 }}>
-          <Typography variant="subtitle1" color="text.secondary" component="div" sx={{px:4,py:2}}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ex officia dolores in minima labore, autem incidunt ea impedit aliquam, enim voluptatum delectus ab et.
+          <Typography variant="h6" color="text.secondary" component="div" sx={{px:4,py:2}}>
+          Our mission is to rescue and treat the unowned street animals of Jamshedpur, who have become ill or injured, and through their rescue, inspire a community to protect and defend the lives of all animals.
           </Typography>
-          <Typography variant="subtitle1" color="text.secondary" component="div" sx={{px:4,py:2}}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ex officia dolores in minima labore, autem incidunt ea impedit aliquam, enim voluptatum delectus ab et.
+          <Typography variant="h6" color="text.secondary" component="div" sx={{px:4,py:2}}>
+          We believe all animals deserve compassion and protection. We are working for the day when all animals' lives will be respected for their inherent value, whether dogs, chickens or fish
           </Typography>
       </CardContent>
       </Card>
-      <RightCard/>
-      <LeftCard/>
-      <Background/>
-      <Album/>
       <TextImage/>
+      <Background text="Spread Love among the Community !!" pic={cover}/>
       <Footer/>
     </>
   );

@@ -5,12 +5,11 @@
     background-size: cover;
     display: grid;
     place-items: center;
-    filter: contrast(1.1) brightness(0.8);
+    filter: contrast(0.9) brightness(1);
 }
 
 .header {
     font-size: 80px;
-    color: rgb(255, 255, 255);
+    color: #F7C85C;
     text-align: center;
-    
 }

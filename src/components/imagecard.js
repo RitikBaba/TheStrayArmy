@@ -15,46 +15,143 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import ad1 from './images/adp1.jpg';
+import ad2 from './images/adp2.jpg';
+import ad3 from './images/adp3.jpg';
+import ad4 from './images/adp4.jpg';
+import ad5 from './images/adp5.jpg';
+import ad6 from './images/adp6.jpg';
+import ad7 from './images/adp7.jpg';
+import ad8 from './images/adp8.jpg';
+import ad9 from './images/adp9.jpg';
+import ad10 from './images/adp10.jpg';
+import ad11 from './images/adp11.jpg';
+import ad12 from './images/adp12.jpg';
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
 
 const theme = createTheme();
+// console.log(itemData);
 
 export default function Album() {
   return (
     <>
-      <main>
-        <Container sx={{ py: 4 }} maxWidth="md">
-          <Grid container spacing={2} >
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4} >
-                <Card
-                  sx={{  display: 'flex', flexDirection: 'column' }}
-                >
-                  <CardMedia
+       <Card sx={{ display: 'flex', alignItems: 'center', justifyContent:'space-evenly',boxShadow: 'none'}}>
+      <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+        <CardContent >
+            <CardMedia
                     component="img"
-                    image="https://source.unsplash.com/random"
+                    image={ad1}
                     alt="random"
-                  />
-                  <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe the
-                      content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small">View</Button>
-                    <Button size="small">Edit</Button>
-                  </CardActions>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
-        </Container>
-      </main>
+                    height={400}
+            />
+        </CardContent>
+        <CardContent >
+            <CardMedia
+                    component="img"
+                    image={ad2}
+                    alt="random"
+                    height={400}
+            />
+        </CardContent>
+        <CardContent >
+            <CardMedia
+                    component="img"
+                    image={ad3}
+                    alt="random"
+                    height={400}
+            />
+        </CardContent>
+        
+      </Box>
+      </Card>
+        <Card sx={{ display: 'flex', alignItems: 'center', justifyContent:'space-evenly',boxShadow: 'none'}}>
+      <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+        <CardContent >
+            <CardMedia
+                    component="img"
+                    image={ad4}
+                    alt="random"
+                    height={400}
+            />
+        </CardContent>
+        <CardContent >
+            <CardMedia
+                    component="img"
+                    image={ad5}
+                    alt="random"
+                    height={400}
+            />
+        </CardContent>
+        <CardContent >
+            <CardMedia
+                    component="img"
+                    image={ad6}
+                    alt="random"
+                    height={400}
+            />
+        </CardContent>
+        
+      </Box>
+      </Card>
+        <Card sx={{ display: 'flex', alignItems: 'center', justifyContent:'space-evenly',boxShadow: 'none'}}>
+      <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+        <CardContent >
+            <CardMedia
+                    component="img"
+                    image={ad7}
+                    alt="random"
+                    height={400}
+            />
+        </CardContent>
+        <CardContent >
+            <CardMedia
+                    component="img"
+                    image={ad8}
+                    alt="random"
+                    height={400}
+            />
+        </CardContent>
+        <CardContent >
+            <CardMedia
+                    component="img"
+                    image={ad9}
+                    alt="random"
+                    height={400}
+            />
+        </CardContent>
+        
+      </Box>
+      </Card>
+        <Card sx={{ display: 'flex', alignItems: 'center', justifyContent:'space-evenly',boxShadow: 'none'}}>
+      <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+        <CardContent >
+            <CardMedia
+                    component="img"
+                    image={ad10}
+                    alt="random"
+                    height={400}
+            />
+        </CardContent>
+        <CardContent >
+            <CardMedia
+                    component="img"
+                    image={ad11}
+                    alt="random"
+                    height={400}
+            />
+        </CardContent>
+        <CardContent >
+            <CardMedia
+                    component="img"
+                    image={ad12}
+                    alt="random"
+                    height={400}
+            />
+        </CardContent>
+        
+      </Box>
+      </Card>
      </>
   );
 }
