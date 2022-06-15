@@ -13,6 +13,7 @@ import About from './components/about';
 import Whatwedo from './components/whatwedo';
 import Sstory from './components/sstory';
 import Contact_us from './components/contact';
+import UpforA from './components/upforadop';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <About/>
       <Whatwedo/>
       <Sstory/>
+      <UpforA/>
       <Contact_us/>
     </Box>
   );
