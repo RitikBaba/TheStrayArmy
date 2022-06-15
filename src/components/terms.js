@@ -21,7 +21,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import UpforA from "./upforadop";
 
-function Contact_us() {
+function Terms() {
   return (
     <>
         <Box>
@@ -114,4 +114,4 @@ function Contact_us() {
   )
 }
 
-export default Contact_us
+export default Terms

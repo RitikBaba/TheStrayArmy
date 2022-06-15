@@ -14,6 +14,7 @@ import Whatwedo from './components/whatwedo';
 import Sstory from './components/sstory';
 import Contact_us from './components/contact';
 import UpforA from './components/upforadop';
+import Terms from './components/terms';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <Sstory/>
       <UpforA/>
       <Contact_us/>
+      <Terms/>
     </Box>
   );
 }
