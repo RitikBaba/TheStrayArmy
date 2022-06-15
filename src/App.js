@@ -15,6 +15,8 @@ import Sstory from './components/sstory';
 import Contact_us from './components/contact';
 import UpforA from './components/upforadop';
 import Terms from './components/terms';
+import Privacy from './components/privacy';
+import RefundP from './components/randcp';
 
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
       <UpforA/>
       <Contact_us/>
       <Terms/>
+      <Privacy/>
+      <RefundP/>
     </Box>
   );
 }
