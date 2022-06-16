@@ -90,6 +90,28 @@ function Footer() {
                 YouTube
               </Button>
           </Box>
+        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex'}, justifyContent: 'center' }}>
+              <Button
+                sx={{ mx:2, color: 'text.secondary', display: 'flex' }}
+                href="https://www.facebook.com/thestrayarmy"
+              >
+                Terms and Conditions
+              </Button>
+              <Button
+                sx={{ mx:2, color: 'text.secondary', display: 'flex' }}
+                href="https://www.instagram.com/thestrayarmy/"
+              >
+                Privacy Policy
+              </Button>
+              <Button
+                sx={{ mx:2,color: 'text.secondary', display: 'flex' }}
+                href="https://twitter.com/thestrayarmy"
+              >
+                Refund and Cancellation Policy
+              </Button>
+              
+          </Box>
+          <br />
         <Copyright />
       </Box>
     </Box>

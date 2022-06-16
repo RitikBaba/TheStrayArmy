@@ -17,6 +17,7 @@ import UpforA from './components/upforadop';
 import Terms from './components/terms';
 import Privacy from './components/privacy';
 import RefundP from './components/randcp';
+import Donate from './components/donate';
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
       <Terms/>
       <Privacy/>
       <RefundP/>
+      <Donate/>
     </Box>
   );
 }
