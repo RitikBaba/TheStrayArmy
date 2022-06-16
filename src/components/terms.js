@@ -30,9 +30,6 @@ function Terms() {
         <br />
         <br />
         <br />
-        <br />
-        <br />
-        <br />
         <Card sx={{ display: 'flex', alignItems: 'center', justifyContent:'space-between',boxShadow: 'none'}}>
       <Box sx={{ display: 'flex',height: 300, bgcolor:'#F7C85C',flex:1, justifyContent: 'center',alignItems: 'center',backgroundImage:{cover} }}>
           <Typography component="div" variant="h1">

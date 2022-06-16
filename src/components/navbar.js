@@ -8,8 +8,9 @@ import AdbIcon from '@mui/icons-material/Adb';
 import mainlogo from './logo.png';
 import textpng from './text.png';
 import VolunteerActivismTwoToneIcon from '@mui/icons-material/VolunteerActivismTwoTone';
+import { NavLink } from 'react-router-dom';
 
-const pages = ['Home', 'About Us', 'What we do', 'Success Stories' , 'Up for Adoption' ,'Contact Us'];
+// const pages = ['Home', 'About Us', 'What we do', 'Success Stories' , 'Up for Adoption' ,'Contact Us'];
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const Navbar = () => {
@@ -61,14 +62,26 @@ const Navbar = () => {
           </Box>
           <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'flex-end' , mx:30 } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                sx={{ my: 2, color: '#2C2F30', display: 'block' }}
-              >
-                {page}
+            {/* {pages.map((page) => ( */}
+              <Button sx={{ my: 2, color: '#2C2F30', display: 'block' }}>
+                <NavLink to="/" className='text-link'> Home</NavLink>
               </Button>
-            ))}
+              <Button sx={{ my: 2, color: '#2C2F30', display: 'block' }}>
+              <NavLink to="/about" className='text-link'> About Us</NavLink>
+              </Button>
+              <Button sx={{ my: 2, color: '#2C2F30', display: 'block' }}>
+              <NavLink to="/whatwedo" className='text-link'> What we do</NavLink>
+              </Button>
+              <Button sx={{ my: 2, color: '#2C2F30', display: 'block' }}>
+              <NavLink to="/sstories" className='text-link'> Success Stories</NavLink>
+              </Button>
+              <Button sx={{ my: 2, color: '#2C2F30', display: 'block' }}>
+              <NavLink to="/upforadop" className='text-link'> Up for Adoption</NavLink>
+              </Button>
+              <Button sx={{ my: 2, color: '#2C2F30', display: 'block' }}>
+              <NavLink to="/contact" className='text-link'> Contact Us</NavLink>
+              </Button>
+            {/* ))} */}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>

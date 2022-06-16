@@ -1,14 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
-// import { Button } from '@mui/material';
-// import Test from './components.js/test';
-import Navbar from './components/navbar';
-// import { palette } from '@mui/system';
-import { Box } from '@mui/material';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Homepage from './components/homepage';
-import LeftCard from './components/leftcard';
-import RightCard from './components/rightcard';
-import Footer from './components/footer';
 import About from './components/about';
 import Whatwedo from './components/whatwedo';
 import Sstory from './components/sstory';
@@ -22,22 +15,20 @@ import Donate from './components/donate';
 
 function App() {
   return (
-    // <div className="App">
-    //   <Button variant="contained">Hello World</Button>
-    //   <Test/>
-    // </div>
-    <Box >
-      <Homepage/>
-      <About/>
-      <Whatwedo/>
-      <Sstory/>
-      <UpforA/>
-      <Contact_us/>
-      <Terms/>
-      <Privacy/>
-      <RefundP/>
-      <Donate/>
-    </Box>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Homepage/>}/>
+        <Route path="about" element={<About/>}/>
+        <Route path="/whatwedo" element={<Whatwedo/>}/>
+        <Route path="/sstories" element={<Sstory/>}/>
+        <Route path="/upforadop" element={<UpforA/>}/>
+        <Route path="/contact" element={<Contact_us/>}/>
+        <Route path="/terms" element={<Terms/>}/>
+        <Route path="/privacy" element={<Privacy/>}/>
+        <Route path="/refundpolicies" element={<RefundP/>}/>
+        <Route path="/donate" element={<Donate/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

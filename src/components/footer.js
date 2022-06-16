@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
+import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -31,11 +31,9 @@ function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="#">
-        The Stray Army 
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
+      <Box color="inherit" href="#">
+        The Stray Army @2022
+      </Box>
     </Typography>
   );
 }
@@ -93,21 +91,21 @@ function Footer() {
         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex'}, justifyContent: 'center' }}>
               <Button
                 sx={{ mx:2, color: 'text.secondary', display: 'flex' }}
-                href="https://www.facebook.com/thestrayarmy"
+                // href="https://www.facebook.com/thestrayarmy"
               >
-                Terms and Conditions
+                <Link to="/terms"  className='text-link'>Terms and Conditions</Link>
               </Button>
               <Button
                 sx={{ mx:2, color: 'text.secondary', display: 'flex' }}
-                href="https://www.instagram.com/thestrayarmy/"
+                // href="https://www.instagram.com/thestrayarmy/"
               >
-                Privacy Policy
+                <Link to="/privacy" className='text-link' >Privacy Policy</Link>
               </Button>
               <Button
                 sx={{ mx:2,color: 'text.secondary', display: 'flex' }}
-                href="https://twitter.com/thestrayarmy"
+                // href="https://twitter.com/thestrayarmy"
               >
-                Refund and Cancellation Policy
+                <Link to="/refundpolicies" className='text-link' >Refund and Cancellation Policy</Link>
               </Button>
               
           </Box>
