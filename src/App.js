@@ -11,11 +11,14 @@ import Terms from './components/terms';
 import Privacy from './components/privacy';
 import RefundP from './components/randcp';
 import Donate from './components/donate';
+import ScrollToTop from './components/scroll';
+
 
 
 function App() {
   return (
     <BrowserRouter>
+        <ScrollToTop/>
       <Routes>
         <Route path="/" element={<Homepage/>}/>
         <Route path="about" element={<About/>}/>

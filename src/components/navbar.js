@@ -8,7 +8,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import mainlogo from './logo.png';
 import textpng from './text.png';
 import VolunteerActivismTwoToneIcon from '@mui/icons-material/VolunteerActivismTwoTone';
-import { NavLink } from 'react-router-dom';
+import { NavLink,Link } from 'react-router-dom';
 
 // const pages = ['Home', 'About Us', 'What we do', 'Success Stories' , 'Up for Adoption' ,'Contact Us'];
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -86,7 +86,7 @@ const Navbar = () => {
 
           <Box sx={{ flexGrow: 0 }}>
           <Button variant="contained" color="error" endIcon={<VolunteerActivismTwoToneIcon sx={{ fontSize: 100 }}/>}>
-            Donate
+            <Link to="/donate" className='text-link'> Donate</Link> 
           </Button>
           </Box>
         </Toolbar>
