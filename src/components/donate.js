@@ -32,7 +32,7 @@ import FormLabel from '@mui/material/FormLabel';
 
 
 function Donate() {
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState("1");
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -88,7 +88,7 @@ function Donate() {
               <TabPanel value="1">
                   <Box sx={{display:'flex', alignItems: 'center',flexDirection:'column', justifyContent:'space-evenly'}}>
                     <Typography variant="h6" color="text.secondary" component="div" sx={{px:4,py:1}}>
-                    Pledge a amout towards Humanity
+                    Pledge an amout towards Humanity
                     </Typography>
                     <FormControl>
                         {/* <FormLabel id="demo-row-radio-buttons-group-label"></FormLabel> */}
@@ -113,7 +113,7 @@ function Donate() {
               <TabPanel value="2" >
               <Box sx={{display:'flex', alignItems: 'center',flexDirection:'column', justifyContent:'space-evenly'}}>
                     <Typography variant="h6" color="text.secondary" component="div" sx={{px:4,py:1}}>
-                    Pledge a amout towards Humanity
+                    Pledge an amout towards Humanity
                     </Typography>
                     <FormControl>
                         {/* <FormLabel id="demo-row-radio-buttons-group-label"></FormLabel> */}

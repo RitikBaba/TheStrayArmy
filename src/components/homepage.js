@@ -15,6 +15,7 @@ import homebox1 from './images/home_box1.jpg';
 import homebox2 from './images/home_box2.jpg';
 import homebox4 from './images/home_box4.jpg';
 import homebox3 from './images/home_box3.jpeg';
+import { NavLink,Link } from 'react-router-dom';
 import LeftCardbtn from './leftcardbtn';
 
 function Homepage() {
@@ -45,7 +46,7 @@ function Homepage() {
         </CardContent>
         <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
             <Button variant="contained" color="error" sx={{fontSize: 20}}endIcon={<VolunteerActivismTwoToneIcon sx={{ fontSize: 400, alignItems: 'center' }}/>}>
-                Donate
+            <Link to="/donate" className='text-link'> Donate</Link> 
             </Button>
         </Box>
       </Box>

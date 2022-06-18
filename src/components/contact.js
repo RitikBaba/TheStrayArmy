@@ -96,7 +96,7 @@ function Contact_us() {
                 Click Here
             </Button>
             <Typography variant="h6" color="text.secondary" component="div" sx={{px:4,py:2}}>
-            To adopt a Stray, visit the<Button href={<UpforA/>} >Up for Adoption</Button> page and fill the form. We will get in touch with you soon.
+            To adopt a Stray, visit the Up for Adoption page and fill the form. We will get in touch with you soon.
           </Typography>
           <Typography variant="h6" color="text.secondary" component="div" sx={{px:4,py:2}}>
           For questions about your donations or different donation methods, visit the ‘Donate’ page.
